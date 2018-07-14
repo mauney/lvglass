@@ -15,14 +15,8 @@
         <header class="site-header">
             <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
             <h5>
-                <?php bloginfo('description');
-                if (is_page('about')) { ?>
-                - Thank you for viewing our work
-                <?php } ?>
-
+                <?php bloginfo('description');?>
             </h5>
-
-            
 
             <nav class="site-nav">
 

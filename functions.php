@@ -7,7 +7,7 @@ function lvglass_resources() {
 add_action('wp_enqueue_scripts', 'lvglass_resources');
 
 // Get Top Ancestor
-/* function get_top_ancestor_id() {
+function get_top_ancestor_id() {
 
     global $post;
 
@@ -17,17 +17,17 @@ add_action('wp_enqueue_scripts', 'lvglass_resources');
     }
 
     return $post->ID;
-} */
+}
 
 // Does Page Have Children?
-/* function has_children() {
+function has_children() {
 
     global $post;
 
     $pages = get_pages('child_of=' . $post->ID);
     return count($pages);
 
-} */
+}
 
 // Theme Setup
 function lvglass_setup() {

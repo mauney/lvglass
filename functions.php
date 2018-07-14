@@ -2,6 +2,7 @@
 
 function lvglass_resources() {
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script('lvglass_js', get_template_directory_uri() .'/js/lvglass.js', array('jquery'), null, true);
 }
 
 add_action('wp_enqueue_scripts', 'lvglass_resources');

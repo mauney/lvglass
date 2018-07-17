@@ -11,16 +11,21 @@
 
     <div class="container">
 
-        <nav class="site-nav">
-
-            <?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
-
-        </nav>
-
         <!-- site-header -->
         <header class="site-header">
 
-            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>&#8801;
+            <div class="title">
+
+                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                <h1 class="menu-icon">&#8801;</h1>
+
+            </div><!-- /title -->
+
+            <nav class="site-nav">
+
+                <?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
+
+            </nav>
 
         </header><!-- /site-header -->
 

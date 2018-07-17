@@ -18,7 +18,7 @@ body {
 .site-header {
     display: flex;
     flex-direction: column;
-    background-color: rgb(165, 233, 233);
+    background-color: #000;
 }
 
 .site-header .title {
@@ -30,18 +30,20 @@ body {
 
 .site-header h1 {
     font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
 }
 
 .site-header h1 a:link,
 .site-header h1 a:visited {
-	text-decoration: none;
+    text-decoration: none;
+    color: #FFF;
 }
 
 /* Header Nav Menu */
 .site-nav {
     order: 1;
     padding: 1rem 0;
-    background-color: rgb(211, 192, 141);
+    background-color: #000;;
 }
 
 .site-nav div {
@@ -62,6 +64,8 @@ body {
 .site-nav a:link,
 .site-nav a:visited {
     text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
 }
 
 /* Home Page */
@@ -69,20 +73,43 @@ body {
 .home-page-links {
     display: flex;
     flex-direction: column;
+    padding-top: 5vw;
 }
 
 .home-link-container {
     position: relative;
+    margin-bottom: 5vw;
 }
 
 .home-link-container img {
     display: block;
     width: 90%;
-    margin: 5vw auto;
+    margin: 0 auto;
 }
 
 .home-link-container h3 {
     position: absolute;
     bottom: 0;
     right: 8vw;
+    color: #FFF;
+}
+
+/* Footer */
+.site-footer {
+    color: #FFF;
+    background-color: #333;
+    padding: 2vw 5vw;
+    line-height: 2;
+}
+
+.site-footer .visit {
+    padding: 
+}
+
+#insta {
+    width: 29px;
+}
+
+.site-footer .copyright {
+    font-size: 60%;
 }

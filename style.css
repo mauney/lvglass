@@ -63,3 +63,26 @@ body {
 .site-nav a:visited {
     text-decoration: none;
 }
+
+/* Home Page */
+
+.home-page-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-link-container {
+    position: relative;
+}
+
+.home-link-container img {
+    display: block;
+    width: 90%;
+    margin: 5vw auto;
+}
+
+.home-link-container h3 {
+    position: absolute;
+    bottom: 0;
+    right: 8vw;
+}

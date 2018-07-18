@@ -4,6 +4,10 @@
 	
 	// $ Works! You can test it with next line if you like
 	// console.log($);
+
+	$('#menu-icon').click(function() {
+		$('#menu-top').toggle(400);
+	  });
 	
 })( jQuery );
 

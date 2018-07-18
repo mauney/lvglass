@@ -40,6 +40,10 @@ body {
 }
 
 /* Header Nav Menu */
+#menu-top {
+    display: none;
+}
+
 .site-nav {
     order: 1;
     padding: 1rem 0;
@@ -74,6 +78,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 5vw;
+    background: linear-gradient(#000, #333)
 }
 
 .home-link-container {
@@ -100,10 +105,6 @@ body {
     background-color: #333;
     padding: 2vw 5vw;
     line-height: 2;
-}
-
-.site-footer .visit {
-    padding: 
 }
 
 #insta {

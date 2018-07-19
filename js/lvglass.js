@@ -6,7 +6,7 @@
 	// console.log($);
 
 	$('#menu-icon').click(function() {
-		$('#menu-top').toggle(400);
+		$('#menu-top').slideToggle(400);
 	  });
 	
 })( jQuery );

@@ -10,11 +10,15 @@ get_header();
 
     $link_containers = array
         (
-        array("Portfolio", "hands"),
-        array("John and Kate", "cube"),
-        array("Studio", "sphere"),
-        array("Collections", "bag"),
-        array("Contact Us", "tulips")
+        array("Gems", "spheres"),
+        array("Nature Studies", "spheres"),
+        array("Rocks", "spheres"),
+        array("Spirals", "spheres"),
+        array("What Do You Hold?", "spheres"),
+        array("What's Between Us?", "spheres"),
+        array("Early Work", "spheres"),
+        array("New Work", "spheres"),
+        array("Tables", "spheres")
         );
 
     foreach($link_containers as $link_details) {

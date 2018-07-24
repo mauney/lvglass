@@ -14,11 +14,15 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.container {
+    background: linear-gradient(#000, #333);
+}
+
 /* Header */
 .site-header {
     display: flex;
     flex-direction: column;
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 .site-header .title {
@@ -49,7 +53,7 @@ body {
     order: 1;
     font-size: 2rem;
     padding-top: 1rem;
-    background-color: #000;;
+    /* background-color: #000; */
 }
 
 .site-nav div {
@@ -74,13 +78,33 @@ body {
     font-weight: bold;
 }
 
+/* Footer */
+.site-footer {
+    color: #FFF;
+    /* background-color: #333; */
+    padding: 2vw 5vw;
+    line-height: 2;
+}
+
+#insta {
+    width: 29px;
+}
+
+.site-footer {
+    font-size: 1.5em;
+}
+
+.site-footer .copyright {
+    font-size: 0.5em;
+}
+
 /* Home Page */
 
 .home-page-links {
     display: flex;
     flex-direction: column;
     padding-top: 2vw;
-    background: linear-gradient(#000, #333)
+    /* background: linear-gradient(#000, #333); */
 }
 
 .home-link-container {
@@ -102,22 +126,28 @@ body {
     font-size: 1.7em;
 }
 
-/* Footer */
-.site-footer {
-    color: #FFF;
-    background-color: #333;
-    padding: 2vw 5vw;
-    line-height: 2;
+/* Pages */
+.page h2 {
+    color: white;
+    text-align: center;
 }
 
-#insta {
-    width: 29px;
+/* Galleries */
+.gallery {
+    margin: 0 auto;
 }
 
-.site-footer {
-    font-size: 1.5em;
+.gallery figure {
+    margin: 0;
 }
 
-.site-footer .copyright {
-    font-size: 0.5em;
+.gallery-icon {
+    margin-bottom: 5vw;
+}
+
+.gallery img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
 }

@@ -39,6 +39,9 @@ function lvglass_setup() {
         'primary' => __( 'Primary Menu' ),
     ));
 
+    // unstyle galleries
+    add_theme_support( 'html5', array( 'gallery', 'caption' ) );
+
     // Add Featured Image Support
     add_theme_support('post-thumbnails');
     // add_image_size('small-thumbnail', 180, 120, true);

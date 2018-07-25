@@ -12,6 +12,7 @@ Version: 1.0
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    color: #FFF;
 }
 
 .container {
@@ -22,7 +23,6 @@ body {
 .site-header {
     display: flex;
     flex-direction: column;
-    /* background-color: #000; */
 }
 
 .site-header .title {
@@ -35,7 +35,6 @@ body {
     flex: 0 0 auto;
     font-size: 3em;
     font-family: 'Times New Roman', Times, serif;
-    color: #FFF;
 }
 
 .site-header h1 a:link,
@@ -53,7 +52,6 @@ body {
     order: 1;
     font-size: 2rem;
     padding-top: 1rem;
-    /* background-color: #000; */
 }
 
 .site-nav div {
@@ -80,8 +78,6 @@ body {
 
 /* Footer */
 .site-footer {
-    color: #FFF;
-    /* background-color: #333; */
     padding: 2vw 5vw;
     line-height: 2;
 }
@@ -104,7 +100,6 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 2vw;
-    /* background: linear-gradient(#000, #333); */
 }
 
 .home-link-container {
@@ -127,9 +122,23 @@ body {
 }
 
 /* Pages */
+.page article {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .page h2 {
-    color: white;
     text-align: center;
+}
+
+.page h2 a:link,
+.page h2 a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.parent-link {
+    margin-top: 0;
 }
 
 /* Galleries */

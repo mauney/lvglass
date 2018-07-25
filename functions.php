@@ -44,8 +44,25 @@ function lvglass_setup() {
 
     // Add Featured Image Support
     add_theme_support('post-thumbnails');
-    // add_image_size('small-thumbnail', 180, 120, true);
-    // add_image_size('banner-image', 920, 210, array('left', 'top'));
+    add_image_size('mobile', 400);
+    add_image_size('mobile-square', 400, 400, array('center', 'center'));
+
+    // Register image sizes for use in Add Media modal
+    add_filter( 'image_size_names_choose', 'lvglass_custom_sizes' );
+    function lvglass_custom_sizes( $sizes ) {
+        return array_merge( $sizes, array(
+            'mobile' => __( 'Mobile Full' ),
+            'mobile-square' => __( 'Mobile Square' )
+        ) );
+    }
+
+    // Start new posts with a default image gallery
+    add_filter( 'default_content', 'initial_post_content' );
+    function initial_post_content( $content ) {
+        $content = '[gallery link="file" size="mobile" ids="175"]';
+        return $content;
+}
+
 }
 
 add_action('after_setup_theme', 'lvglass_setup');

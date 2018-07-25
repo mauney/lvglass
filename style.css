@@ -15,8 +15,16 @@ body {
     color: #FFF;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 .container {
     background: linear-gradient(#000, #333);
+    min-height: 100vh;
 }
 
 /* Header */
@@ -33,7 +41,7 @@ body {
 
 .site-header h1 {
     flex: 0 0 auto;
-    font-size: 3em;
+    font-size: 2.7em;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -79,46 +87,72 @@ body {
 /* Footer */
 .site-footer {
     padding: 2vw 5vw;
+    font-size: 1.5em;
+    text-align: center;
     line-height: 2;
+}
+
+.site-footer img{
+    display: inline;
+    width: auto;
+    margin: 0 0.2em;
 }
 
 #insta {
     width: 29px;
 }
 
-.site-footer {
-    font-size: 1.5em;
-}
-
 .site-footer .copyright {
     font-size: 0.5em;
 }
 
-/* Home Page */
+/* Home Page and Portfolio*/
 
-.home-page-links {
+.page-links {
     display: flex;
     flex-direction: column;
+    width: 90%;
     padding-top: 2vw;
+    margin: 0 auto;
 }
 
-.home-link-container {
+.link-container {
     position: relative;
     margin-bottom: 5vw;
 }
 
-.home-link-container img {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.home-link-container h3 {
+.link-container h3 {
     position: absolute;
     bottom: 0;
     right: 8vw;
     color: #FFF;
     font-size: 1.7em;
+}
+
+/* Alt Portfolio */
+
+.alt-page-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 2vw;
+    margin: 0 auto;
+}
+
+.alt-link-container {
+    flex: 0 1 auto;
+    position: relative;
+    width: 47%;
+    margin-bottom: 5vw;
+}
+
+.alt-link-container h3 {
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    color: #FFF;
+    font-size: 1.2em;
 }
 
 /* Pages */
@@ -127,13 +161,23 @@ body {
     margin: 0 auto;
 }
 
-.page h2 {
+.featured-image {
+    margin-bottom: 5vw;
+}
+
+.page h2,
+.page h3 {
     text-align: center;
 }
 
 .page h2 a:link,
 .page h2 a:visited {
     text-decoration: none;
+    color: #FFF;
+}
+
+.page a:link, /* for contacts page */
+.page a:visited {
     color: #FFF;
 }
 
@@ -154,9 +198,13 @@ body {
     margin-bottom: 5vw;
 }
 
-.gallery img {
-    display: block;
+/* Single Post Page */
+.single {
     width: 90%;
-    height: auto;
     margin: 0 auto;
+}
+
+.single h2 {
+    text-align: center;
+    margin-top: 0;
 }

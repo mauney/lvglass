@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<div class="page-links">
+<div class="alt-page-links">
 
     <?php
 
@@ -23,7 +23,7 @@ get_header();
 
     foreach($link_containers as $link_details) {
     ?>
-        <div class="link-container">
+        <div class="alt-link-container">
             <a href="<?php echo get_page_link( get_page_by_title( $link_details[0] )->ID ); ?>">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/<?php echo $link_details[1] ?>.jpg">
                 <h3><?php echo $link_details[0] ?></h3>
@@ -34,7 +34,7 @@ get_header();
     }
 
     ?>
-</div><!-- /page-links -->
+</div><!-- /home-page-links -->
 
 <?php
 

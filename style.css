@@ -6,7 +6,7 @@ Version: 1.0
 */
 
 :root {
-    --main-blue: #006ec3;
+    /* --main-blue: #006ec3; */
     font-size: calc(1vw + 1.5vh + 0.5vmin);
 }
 
@@ -199,7 +199,7 @@ img {
 }
 
 /* Single Post Page */
-.single {
+.single-work {
     width: 90%;
     margin: 0 auto;
 }

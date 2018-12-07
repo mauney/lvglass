@@ -9,8 +9,8 @@ if (have_posts()) :
 
     endwhile;
 
-    else :
-        echo '<p>No content found.</p>';
+else :
+    echo '<p>No content found.</p>';
 
 endif;
 

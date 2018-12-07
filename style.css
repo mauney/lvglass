@@ -30,7 +30,8 @@ img {
 }
 
 .container {
-    background: linear-gradient(#000, #333);
+    background: rgb(62, 68, 71);
+    /* background: linear-gradient(#000, #333); */
     min-height: 100vh;
 }
 
@@ -153,15 +154,22 @@ img {
 
 .link-container h3 {
     position: absolute;
-    bottom: 0;
-    right: 8vw;
     color: #FFF;
-    font-size: 1.7em;
+}
+
+@media all and (max-width: 699px) {
+    .link-container h3 {
+        bottom: 0;
+        right: 8vw;
+        font-size: 1.7em;
+    }
+
 }
 
 @media all and (min-width: 700px) {
     .page-links {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
         width: 90%;
@@ -174,11 +182,10 @@ img {
     }
 
     .link-container h3 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        color: #FFF;
-        font-size: 0.7em;
+        /* top: 0;
+        width: 100%; */
+        position: relative;
+        font-size: 1.2em;
     }
 }
 

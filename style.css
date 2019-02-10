@@ -125,8 +125,10 @@ img {
 
 .site-footer img{
     display: inline;
-    width: auto;
     margin: 0 0.2em;
+}
+#fb {
+    width:auto;
 }
 
 #insta {

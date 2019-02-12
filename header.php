@@ -10,6 +10,7 @@
 <body <?php body_class(); ?>>
 
     <div class="container">
+    <div class="wrapper">
 
         <!-- site-header -->
         <header class="site-header">

@@ -3,8 +3,8 @@
 get_header();
 
 ?>
-
-<div class="page-links">
+<!-- this section is for small screens -->
+<div class="page-links home-page-links">
 
     <?php
 
@@ -31,6 +31,11 @@ get_header();
 
     ?>
 </div><!-- /page-links -->
+
+<!-- this section is for small screens -->
+<div class="featured-image hide-small">
+    <img src="http://localhost/~matthew/lvglass/wp-content/uploads/2018/07/Succulent.jpg">
+</div><!-- /featured-image -->
 
 <?php
 

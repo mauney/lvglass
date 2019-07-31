@@ -21,8 +21,8 @@ Version: 1.0
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #FFF;
-    background-repeat: no-repeat;
+    /* color: #FFF; */
+    /* background-repeat: no-repeat; */
 }
 
 img {
@@ -33,7 +33,8 @@ img {
 }
 
 .container {
-    background: rgb(62, 68, 71);
+    /* background: rgb(62, 68, 71); */
+    background: #FFF;
     /* background: linear-gradient(#000, #333); */
     min-height: 100vh;
 }
@@ -57,21 +58,30 @@ img {
 }
 
 .site-header .title {
-    display: flex;
     order: 2;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .site-header h1 {
-    flex: 0 0 auto;
-    font-size: 2.7em;
-    font-family: 'Times New Roman', Times, serif;
+    order: 1;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.site-header .thin {
+    font-weight: 100;
 }
 
 .site-header h1 a:link,
 .site-header h1 a:visited {
     text-decoration: none;
-    color: #FFF;
+    color: #000;
+}
+
+.site-header p {
+    order: 0;
 }
 
 @media all and (min-width: 700px) {
@@ -93,7 +103,7 @@ img {
 
 .site-nav {
     order: 1;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding-top: 1rem;
 }
 
@@ -110,12 +120,13 @@ img {
 
 .site-nav ul li {
     list-style: none;
+    text-align: center;
 }
 
 .site-nav a:link,
 .site-nav a:visited {
     text-decoration: none;
-    color: #FFF;
+    color: #000;
     font-weight: bold;
 }
 
@@ -264,7 +275,7 @@ img {
 
 .page a:link, /* for contacts page */
 .page a:visited {
-    color: #FFF;
+    /* color: #FFF; */
 }
 
 .parent-link {

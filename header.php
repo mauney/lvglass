@@ -18,12 +18,12 @@
             <div class="title">
 
                 <?php if ( is_front_page() ): ?>
-                    <h1><?php bloginfo('name'); ?></h1>
+                    <h1>John Littleton <span class="thin">and</span> Kate Vogel</h1>
                 <?php else: ?>
-                    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <h1><a href="<?php echo home_url(); ?>">John Littleton <span class="thin">and</span> Kate Vogel</a></h1>
                 <?php endif ?>
 
-                <h1 id="menu-icon">&#8801;</h1>
+                <p id="menu-icon">Menu</p>
 
             </div><!-- /title -->
 
